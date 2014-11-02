@@ -2,6 +2,6 @@ This is a collection of scripts built to support my use of acme. I haven't been 
 
 Add this to your PATH to make it easy to use.
 
-=== agofmt
+## agofmt
 
 Run's gofmt on the current file.
