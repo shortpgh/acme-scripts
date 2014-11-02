@@ -1,5 +1,7 @@
 #!/usr/bin/env 9 rc
-echo "going"
+
+// Copied this code from http://acme.cat-v.org/scripts/agofmt
+
 fn aread { 9p read acme/$winid/$1 }
 fn awrite { 9p write acme/$winid/$1 }
 ftmp=`{mktemp /tmp/Agofmt.XXXXXX}
@@ -22,5 +24,3 @@ if not {
        sed 's|^/dev/stdin|'^$%^'|' $etmp >[1=2]
 }
 rm -f $ftmp $etmp
-echo "done"
-
